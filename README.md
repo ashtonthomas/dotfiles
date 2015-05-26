@@ -1,6 +1,13 @@
-# holman does dotfiles
+# Forked from Zach Holman
 
 ## dotfiles
+
+http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/
+https://github.com/holman/dotfiles
+https://dotfiles.github.io/
+https://github.com/megalithic/dotfiles
+https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+https://github.com/brousalis/dotfiles
 
 Your dotfiles are how you personalize your system. These are mine.
 

@@ -5,6 +5,7 @@
 set -e
 
 # use -iru to search directories ack usually ignores (like .git)
+# TODO look into ag [act]
 if [ -x /usr/bin/ack-grep ]; then
     ack-grep -i $1
 else

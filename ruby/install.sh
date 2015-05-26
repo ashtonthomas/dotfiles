@@ -1,13 +1,17 @@
 #!/bin/sh
 
-if test ! $(which rbenv)
-then
-  echo "  Installing rbenv for you."
-  brew install rbenv > /tmp/rbenv-install.log
-fi
+echo "Installing chruby ..."
+  brew install chruby
+  brew install ruby-install
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
 
-if test ! $(which ruby-build)
-then
-  echo "  Installing ruby-build for you."
-  brew install ruby-build > /tmp/ruby-build-install.log
-fi
+  ruby-install ruby 2.2.2
+  chruby ruby-2.2.2
+
+echo "Permit user to write to system rubies and gems ..."
+  sudo chown -R $(whoami) /Library/Ruby/Gems/2.0.0
+
+echo "Set number of cores available for bundler"
+  number_of_cores=$(sysctl -n hw.ncpu)
+  bundle config --global jobs $((number_of_cores - 1))
