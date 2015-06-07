@@ -42,3 +42,11 @@ do
 done
 
 unset config_files
+
+function be(){
+  if [[ -a Gemfile ]]; then
+    bundle exec $*
+  else
+    command $*
+  fi
+}
