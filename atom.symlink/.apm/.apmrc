@@ -2,4 +2,4 @@
 ; modifications will be lost the next time any apm command is run.
 ;
 ; You should instead edit your .apmrc config located in ~/.atom/.apmrc
-cache = /Users/atown/git/ashtonthomas/dotfiles/atom.symlink/.apm
+cache = /Users/ashton/git/ashtonthomas/dotfiles/atom.symlink/.apm
