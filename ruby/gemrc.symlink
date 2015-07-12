@@ -1,6 +1,10 @@
 ---
+:backtrace: false
+:bulk_threshold: 1000
+:sources:
+- https://rubygems.org/
+- https://c58d0ae1472fd775aa7821b6d1c4abb2346c320ae62d7535:@packagecloud.io/bellycard/private/
 :update_sources: true
 :verbose: true
-:backtrace: false
-:benchmark: false
+benchmark: false
 gem: --no-document
