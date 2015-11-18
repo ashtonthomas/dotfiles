@@ -6,8 +6,8 @@ echo "Installing chruby ..."
   source /usr/local/share/chruby/chruby.sh
   source /usr/local/share/chruby/auto.sh
 
-  ruby-install ruby 2.2.2
-  chruby ruby-2.2.2
+  ruby-install ruby 2.0.0
+  chruby ruby-2.0.0
 
 echo "Permit user to write to system rubies and gems ..."
   sudo chown -R $(whoami) /Library/Ruby/Gems/2.0.0
